@@ -1,0 +1,6 @@
+CREATE TABLE HISTORY (
+    id SERIAL NOT NULL,
+    info TEXT NOT NULL,
+    time TIMESTAMP NOT NULL,
+    PRIMARY KEY (id)
+);
