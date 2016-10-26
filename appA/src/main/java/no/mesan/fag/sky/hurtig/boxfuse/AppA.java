@@ -15,6 +15,7 @@ public class AppA {
                 System.getProperty("BOXFUSE_DATABASE_URL"),
                 System.getProperty("BOXFUSE_DATABASE_USER"),
                 System.getProperty("BOXFUSE_DATABASE_PASSWORD"));
+        flyway.clean();
         flyway.migrate();
 
         SpringApplication.run(AppA.class, args);
